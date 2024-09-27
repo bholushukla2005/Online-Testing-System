@@ -1,110 +1,28 @@
-login page code<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Login Form</title>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #07ddf9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+form{
+    box-sizing:border-box;
+    padding:20px;
+    border-radius:10px;
+    background-color:#AFD275;
+    display:table;
+    width:100%;
 }
-
-.login-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin: 20px;
+input{
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+    height:30px;
+    font-size:22px;
 }
-
-.login-form {
-    display: flex;
-    flex-direction: column;
+.question{
+    color:#F64C72;
+    font-size:22px;
+    margin-bottom:20px;
 }
-
-.login-form h2 {
-    margin-bottom: 20px;
-    color: #00796b;
+.options{
+    font-size:22px;
 }
-
-.login-form label {
-    margin-bottom: 5px;
-    color: #00796b;
+.options input{
+    display:inline;
+    width:fit-content;
+    height:10px;
 }
-
-.login-form input {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #b2dfdb;
-    border-radius: 4px;
-}
-
-.login-form button {
-    padding: 10px;
-    background-color: #07ddf9;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #14df6c;
-}
-
-.login-form p {
-    margin-top: 10px;
-    color: #000000;
-}
-
-.click-here-btn {
-    background-color: transparent;
-    color: #f2ecec;
-    border: none;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.click-here-btn:hover {
-    color: #14df6c;
-}
-
-@media (max-width: 600px) {
-    .login-container {
-        padding: 15px;
-    }
-
-    .login-form h2 {
-        font-size: 1.5em;
-    }
-
-    .login-form input, .login-form button {
-        font-size: 1em;
-    }
-}
-    </style>
-</head>
-<body>
-    <div class="login-container">
-        <form class="login-form">
-            <h2 style="color: #050505;">Login Form</h2>
-            <label for="username" style="color: #050505;">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password" style="color: #050505;">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
-            <p>New user? <button type="button" class="click-here-btn">Click Here</button></p>
-        </form>
-    </div>
-</body>
-</html>
